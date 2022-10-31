@@ -1,0 +1,19 @@
+import numpy
+def gamer(a):
+    print('START')
+    for m in range(9):
+        for i in range(3):
+            j=0
+            print('|'+str(a[i][j])+'||'+str(a[i][j+1])+'||'+str(a[i][j+2])+'|')
+        p=int(input("enter i "))
+        q=int(input("enter j "))
+        z=int(input('enter 1 or 2'))
+        a[p][q]=z
+print('NOTE:This game terminates only when all the boxes have been occupied')
+a=[[0,0,0],
+   [0,0,0],
+   [0,0,0]]
+for i in range(3):
+    for j in range(3):
+        a[i][j]=0
+gamer(a)
